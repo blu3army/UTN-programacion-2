@@ -18,7 +18,8 @@ public class SecondWeek {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-                
+        
+        // Estructuras Condicionales
         // 1
         leapYear();
         // 2
@@ -27,14 +28,21 @@ public class SecondWeek {
         ageClassifier();
         // 4
         discountCalculator();
+        
+        
+        
+        // Estructuras de Repetición:
         // 5
         evenNumbers();
         // 6
         positivesNegativesZeros();
-        //7
+        // 7
         markValidation();
         
-        //8
+       
+        
+        // Funciones
+        // 8
         System.out.println("Ingrese el precio base del producto: ");
         
         double basePrice = Double.parseDouble(scanner.nextLine());
@@ -47,8 +55,7 @@ public class SecondWeek {
         
         double discount = Double.parseDouble(scanner.nextLine());
                 
-        calculateFinalPrice(basePrice, tax, discount);
-        
+        calculateFinalPrice(basePrice, tax, discount);        
         
         // 9
         System.out.println("Ingrese el precio del producto: ");
@@ -81,7 +88,10 @@ public class SecondWeek {
         double _productPrice = Double.parseDouble(scanner.nextLine());
           
         calculateSpecialDiscount(_productPrice);
-
+        
+        
+        
+        // Arrays y Recursividad:
         // 12
         modifyingArray();
           
