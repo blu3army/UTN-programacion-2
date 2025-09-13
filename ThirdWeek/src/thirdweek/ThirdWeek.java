@@ -41,30 +41,32 @@ class Libro {
     private String titulo, autor;
     private int anioPublicacion;
     
-    void setTitulo(String newTitulo){
+    public void setTitulo(String newTitulo){
         titulo = newTitulo;
     }
     
-    void setAutor(String newAutor){
+    public void setAutor(String newAutor){
         autor = newAutor;
     }
     
-    String getTitulo(){
+    public String getTitulo(){
         return titulo;
     }
     
-    String getAutor(){
+    public String getAutor(){
         return autor;
     }
     
-    int getAnioPublicacion(){
+    public int getAnioPublicacion(){
         return anioPublicacion;
     }
     
-    void setAnioPublicacion(int anio){
+    public void setAnioPublicacion(int anio){
     
-        if(anio >= 0){
+        if(anio >= 1700){
             anioPublicacion = anio;
+        } else {
+            System.out.println("El año no es válido");
         }
         
     }
