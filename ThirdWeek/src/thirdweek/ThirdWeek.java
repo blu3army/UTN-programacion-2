@@ -38,8 +38,16 @@ class Mascota {
 }
 
 class Libro {
-    String titulo, autor;
-    int anioPublicacion;
+    private String titulo, autor;
+    private int anioPublicacion;
+    
+    void setTitulo(String newTitulo){
+        titulo = newTitulo;
+    }
+    
+    void setAutor(String newAutor){
+        autor = newAutor;
+    }
     
     String getTitulo(){
         return titulo;
@@ -145,8 +153,8 @@ public class ThirdWeek {
         
         // 3 
         Libro libro = new Libro();
-        libro.autor = "George R R Martin";
-        libro.titulo = "La danza de los dragones";
+        libro.setAutor("George R R Martin");
+        libro.setTitulo("La danza de los dragones");
         libro.setAnioPublicacion(1980);
         System.out.println(libro.getAnioPublicacion());
         libro.setAnioPublicacion(-150);
