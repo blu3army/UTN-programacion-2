@@ -15,7 +15,7 @@ public class Empleado {
     private String nombre;
     private String puesto;
     private double salario;
-    static int totalEmpleados;
+    private static int totalEmpleados;
     
     public Empleado(int id, String nombre, String puesto, double salario) {
         this.id = id;
